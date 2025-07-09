@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+@media print {
+  body {
+    background: white;
+  }
+  nav, footer, button, .no-print {
+    display: none;
+  }
+  li {
+    page-break-inside: avoid;
+  }
+}
