@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="bg-red-800 text-white px-4 py-4 flex flex-wrap justify-between items-center shadow-md">
       <div className="flex items-center space-x-3 mb-2 sm:mb-0">
-        <img src="/hindalco_logo.jpg" alt="Logo" className="h-15 w-15 border border-white " />
+        <img src="/hindalco_logo.jpg" alt="Logo" className="h-10 w-10 border border-white rounded-full" />
         <span className="font-bold text-lg">Tools Tracker</span>
       </div>
 
