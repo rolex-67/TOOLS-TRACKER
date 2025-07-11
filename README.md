@@ -1,12 +1,48 @@
-# React + Vite
+# 🛠️ Tools Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **full-stack MERN application** to track tools inventory, requests, appointments, and returns, with **role-based authentication** for Admin, Toolskeeper, and Users.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Features**
 
-## Expanding the ESLint configuration
+- **User authentication & authorization**
+  - Signup & login with role selection (Admin, Toolskeeper, User)
+  - Secure password hashing with bcrypt
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Role-based access**
+  - **Users:** View tools in Stores & Available Items, request tools, return tools
+  - **Toolskeeper:** Appoint tools to users
+  - **Admin:** Approve tool requests, manage tools master, manage users
+
+- **Tools inventory management**
+  - View all tools fetched from [dummyjson](https://dummyjson.com/products)
+  - Request and appoint tools with quantity update logic
+  - Return tools with condition and date tracking
+
+- **Backend APIs (Express + MongoDB)**
+  - Auth routes (`/auth/signup`, `/auth/login`)
+  - Tool appointment, request, approval, and return routes (`/api`)
+
+- **Frontend (React + Tailwind CSS)**
+  - Responsive and clean UI
+  - Role-based routing with react-router-dom
+  - Axios integration for API calls
+
+---
+
+## 🛠️ **Tech Stack**
+
+- **Frontend:** React, Tailwind CSS, Axios, React Router
+- **Backend:** Node.js, Express.js, Mongoose
+- **Database:** MongoDB (local or Atlas)
+
+---
+
+## 💻 **Local Setup**
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/yourusername/tools-tracker.git
+cd tools-tracker
